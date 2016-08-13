@@ -1,0 +1,43 @@
+.resume-hero
+  padding-top: 40px
+  padding-bottom: 20px
+  h1
+    color: $c-blue
+
+.section-title
+  h2
+    font-size: 28px
+
+[class^="timebar"]
+  width: 6px
+  background: url('../images/bg-timebar.png')
+  margin-left: 10px
+  [class^="time-point"]
+    position: absolute
+    bottom: -28px
+    left: -7px
+    width: 20px
+    height: 20px
+    border-radius: 50%
+    background-color: #999
+
+[class^="timebox"]
+  margin-left: 60px
+  background-color: #ccc
+  border-radius: 5px
+  padding: 20px
+  margin-top: -20px
+  &:before
+    content: ""
+    position: absolute
+    width: 40px
+    height: 40px
+    border-radius: 5px
+    background-color: #ccc
+    z-index: -1
+    margin: -2px 0 0 -28px
+    +transform(rotate(45deg))
+
+.timebar-1
+  height: 200px
+  position: relative

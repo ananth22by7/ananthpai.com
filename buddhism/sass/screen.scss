@@ -1,0 +1,796 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass";
+@import "compass/reset";
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #ccc;
+    // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+.btn-close {
+    cursor: pointer;
+    opacity: 0.3;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    @include transition(0.2s);
+    z-index: 10;
+    &:hover {
+        opacity: 1;
+        @include transition(0.2s);
+    }
+}
+
+.background {
+	position: relative;
+	height: 800px;
+	width: 800px;
+	background: transparent url('../images/bg.png') no-repeat center center;
+	background-size: cover;
+    margin: 6px 0 6px 8px;
+	img {
+		position: absolute;
+		cursor: pointer;
+		z-index: 2;
+		opacity: 0;
+		@include transition(0.2s);
+	}
+}
+
+.overlay {
+	background: rgb(0, 0, 0);
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	z-index: 1;
+	@include transition(0.2s ease-in-out);
+}
+
+.centre-hands {
+    width: 27.125%;
+    left: 37.5%;
+    top: 43.5%;
+}
+
+.centre-lotus-1 {
+	width: 17.125%;
+	left: 32.375%;
+	top: 28.875%;
+}
+
+.centre-lotus-2 {
+	width: 16.875%;
+	left: 50.75%;
+	top: 26.125%;
+}
+
+.north-hand-main {
+	width: 11.75%;
+	left: 36.875%;
+	top: 6.75%;
+}
+
+.north-vajra {
+	width: 14.625%;
+	left: 50.25%;
+	top: 9.375%;
+}
+
+.north-hand-sub-1 {
+	width: 10.125%;
+	left: 23.875%;
+	top: 2.75%;
+}
+
+.north-hand-sub-2 {
+	width: 9.375%;
+	left: 64%;
+	top: 2.125%;
+}
+
+.west-hands {
+	width: 11.1875%;
+	left: 11.25%;
+	top: 36.875%;
+}
+
+.west-lotus-1 {
+	width: 12.25%;
+	left: 0.625%;
+	top: 53%;
+}
+
+.west-lotus-2 {
+	width: 12.125%;
+	left: 1%;
+	top: 35.125%;
+}
+
+.south-chintamani {
+	width: 8.375%;
+	top: 76.857%;
+	left: 42.75%;
+}
+
+.south-hand-main {
+	width: 6.625%;
+	top: 75%;
+	left: 54.375%;
+}
+
+.south-lotus {
+	width: 15.875%;
+	left: 29.125%;
+	top: 85.5%;
+	@include rotate(-24deg);
+}
+
+.south-hand-sub {
+	width: 6.5%;
+	left: 62.375%;
+	top: 89.125%;
+}
+
+.east-hand-main {
+	width: 16%;
+    left: 76.375%;
+    top: 38.5%;
+}
+
+.east-vajra {
+	width: 12.625%;
+	left: 77%;
+	top: 54.625%;
+}
+
+.east-hand-sub-1 {
+	width: 11.5%;
+	left: 88%;
+	top: 26.625%;
+}
+
+.east-hand-sub-2 {
+	width: 10%;
+	left: 87.75%;
+	top: 61%;
+}
+
+.corner-lotus {
+	width: 17.875%;
+    left: 9.875%;
+    top: 16.375%;
+	@include rotate(-38deg);
+}
+
+.corner-conch {
+	width: 9.375%;
+	left: 4.5%;
+	top: 1.5%;
+	@include rotate(-43deg);
+}
+
+.corner-dhvaja {
+	width: 10.25%;
+	left: 74.125%;
+	top: 12%;
+	@include rotate(43deg);
+}
+
+.corner-parasol {
+	width: 14.25%;
+	left: 84.125%;
+	top: 2.25%;
+	@include rotate(45deg);
+}
+
+.corner-dharmachakra {
+	width: 13.875%;
+	left: 73%;
+	top: 72.75%;
+}
+
+.corner-vase {
+	width: 11.25%;
+	left: 85.75%;
+	top: 84.375%;
+	@include rotate(-44deg);
+}
+
+.corner-fish {
+	width: 12.75%;
+	left: 13.375%;
+	top: 73.375%;
+	@include rotate(45deg);
+}
+
+.corner-knot {
+	width: 9.25%;
+	left: 4.25%;
+	top: 86%;
+}
+
+.background, .info-side {
+	display: inline-block;
+	float: left;
+}
+
+/***********************/
+/* Info side stuff */
+/***********************/
+
+.info-side {
+	margin: 6px 8px;
+	width: 580px;
+    position: relative;
+}
+
+.info-box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: white;
+    border: 30px solid black;
+    padding: 16px;
+    padding-bottom: 24px;
+    overflow: auto;
+    max-height: 700px;
+    display: none; //this is not temporary, add it when done with development
+
+}
+
+.info-main {
+    display: block;
+    border-image: url('../images/border-colourful.jpg') 90 90 round;
+    .intro {
+        height: auto;
+        min-height: 0;
+        margin-bottom: 24px;
+    }
+    .intro-text {
+        width: auto;
+        text-align: center;
+        float: none;
+        p {
+            font-size: 14px;
+            padding: 0 18px;
+            margin-bottom: 10px;
+        }
+    }
+    .mandala-layout {
+        width: 360px;
+        margin: 0 auto 12px;
+        display: block;
+        border: 2px solid #c3c3c3;
+    }
+}
+
+h2 {
+	font-family: 'Playfair Display', 'Georgia', serif;
+	font-weight: 900;
+	text-align: center;
+	font-size: 36px;
+    margin-top: 6px;
+}
+
+h3 {
+	font-family: 'Playfair Display', 'Georgia', serif;
+	font-weight: 700;
+	font-style: italic;
+	font-size: 18px;
+	text-align: center;
+	margin-top: 12px;
+	margin-bottom: 24px;
+	font-size: 20px;
+	&.alternate {
+		font-style: normal;
+		text-align: center;
+		font-size: 24px;
+	}
+}
+
+h4 {
+	font-family: 'Karla', helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+b {
+	font-weight: bold;
+}
+
+p {
+	font-family: 'Karla', helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 1.4;
+	margin-bottom: 8px;
+}
+
+.intro {
+	min-height: 250px;
+	margin-bottom: 36px;
+}
+
+.intro-text {
+	// float: left;
+	width: 59%;
+	display: inline-block;
+}
+
+.intro-image {
+	float: right;
+	display: inline-block;
+	width: 39%;
+}
+
+.icons {
+	min-height: 120px;
+	margin-bottom: 30px;
+	.box {
+		float: left;
+		text-align: center;
+		width: 25%;
+		display: inline-block;
+	}
+	img {
+		width: 60px;
+		margin-bottom: 12px;
+	}
+	p {
+		// font-weight: bold;
+		color: #333;
+	}
+}
+
+.mudra-symbol {
+	min-height: 250px;
+	.box {
+		float: left;
+		text-align: center;
+		width: 48%;
+		display: inline-block;
+		padding: 0 1%;
+	}
+	img {
+		width: 120px;
+		margin-bottom: 18px;
+	}
+	h4 {
+		margin-bottom: 6px;
+	}
+}
+
+.chants {
+	text-align: center;
+    p {
+        font-weight: bold;
+    }
+	h3 {
+		margin-bottom: 24px;
+	}
+    img {
+        height: 60px;
+        margin-bottom: 8px;
+    }
+	.box {
+		width: 47%;
+		padding: 0 1%;
+		display: inline-block;
+	}
+    .seed-syllable {
+        margin-top: 24px;
+        h4 {
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+    }
+}
+
+.centre-main {
+    border-image: url('../images/border-unit-white.jpg') 90 90 round;
+	.chants {
+		.img-1 {
+			height: 60px;
+		}
+		.img-2 {
+			height: 48px;
+			margin-bottom: 9px;
+		}
+	}
+    .seed-syllable {
+        img {
+            height: 40px;
+        }
+    }
+}
+
+.info-sub {
+    // height: 670px;
+    .intro {
+        min-height: 192px;
+    }
+    .intro-text {
+        width: 69%;
+    }
+    .intro-image {
+        width: 29%;
+    }
+    .mudra-symbol {
+        min-height: 175px;
+    }
+    .chants {
+        margin-top: 24px;
+        img {
+            width: 200px;
+            height: auto;
+        }
+    }
+    .seed-syllable {
+        img {
+            width: 60px;
+        }
+    }
+}
+
+.centre-sub {
+    border-image: url('../images/border-unit-white.jpg') 90 90 round;
+    .mudra-box {
+        margin-top: 26px;
+    }
+}
+
+.west-main {
+    border-image: url('../images/border-red.jpg') 90 90 round;
+    .chants {
+        .img-1 {
+            height: 60px;
+        }
+        .img-2 {
+            height: 40px;
+            margin-bottom: 9px;
+        }
+    }
+    .mudra-symbol {
+        min-height: 210px;
+        .box {
+            float: none;
+            width: 47.5%;
+        }
+        img {
+            width: 170px;
+        }
+    }
+}
+
+.west-sub {
+    border-image: url('../images/border-red.jpg') 90 90 round;
+}
+
+.east-main {
+    border-image: url('../images/border-blue.png') 90 90 round;
+    .mudra-symbol {
+        min-height: 300px;
+        img {
+            height: 150px;
+            width: auto;
+        }
+    }
+    .chants {
+        img {
+            height: 60px;
+            margin-bottom: 12px;
+        }
+    }
+}
+
+.east-sub {
+    border-image: url('../images/border-blue.png') 90 90 round;
+    .mudra-symbol {
+        .box {
+            float: none;
+            width: 47.5%;
+        }
+    }
+    .mudra-box {
+        img {
+            width: 110px;
+        }
+    }
+    .symbol-box {
+        img {
+            width: 140px;
+        }
+    }
+}
+
+.north-main {
+    border-image: url('../images/border-green.jpg') 90 90 round;
+    .mudra-symbol {
+        img {
+            height: 120px;
+            width: auto;
+        }
+    }
+    .chants {
+        img {
+            height: 40px;
+        }
+    }
+    .seed-syllable {
+        img {
+
+        }
+    }
+}
+
+.north-sub {
+    border-image: url('../images/border-green.jpg') 90 90 round;
+    .mudra-symbol {
+        img {
+            height: 140px;
+            width: auto;
+        }
+    }
+}
+
+
+.south-main {
+    border-image: url('../images/border-yellow.jpg') 90 90 round;
+    .mudra-symbol {
+        img {
+            height: 140px;
+            width: auto;
+        }
+    }
+    .chants {
+        img {
+            height: 48px;
+        }
+    }
+}
+
+.south-sub {
+    border-image: url('../images/border-yellow.jpg') 90 90 round;
+    .mudra-symbol {
+        img {
+            height: 120px;
+            width: auto;
+        }
+    }
+}
+
+// .south-main, .south-sub {
+//     h2, h3, h4, b {
+//         color: #B98919;
+//     }
+// }
+
+//////////////////////////////////
+// Ashtamangala
+//////////////////////////////////
+
+.ashtamangala-box {
+    text-align: center;
+    .intro {
+        height: auto;
+        min-height: 0;
+        margin-bottom: 24px;
+    }
+    .intro-text {
+        float: none;
+        width: auto;
+        padding: 0 8%;
+    }
+    h3 {
+        margin-bottom: 16px;
+    }
+}
+
+.ashtamangala-symbol {
+    width: 100px;
+    margin: 24px auto;
+    display: block;
+}
+
+.ashtamangala-intro {
+    padding: 0 8%;
+}
+
+.ashtamangala-box {
+    border-image: url('../images/border-colourful.jpg') 90 90 round;
+}
+
+.lotus-box {
+    .ashtamangala-symbol {
+        width: 300px;
+    }
+}
+
+.parasol-box, .fish-box, .knot-box, .dharmachakra-box {
+    .ashtamangala-symbol {
+        width: 140px;
+    }
+}
+
+.ashtamangala-index {
+    margin: 12px;
+    .row {
+        padding: 12px 0;
+    }
+    .symbol-box {
+        cursor: pointer;
+        width: 24.3%;
+        display: inline-block;
+        text-align: center;
+        img {
+            height: 60px;
+            display: block;
+            margin: 0 auto;
+        }
+        p {
+            border-bottom: 1px dashed rgba(0, 0, 0, 0);
+            display: inline-block;
+            margin-top: 8px;
+            padding-bottom: 2px;
+        }
+        &.symbol-lotus {
+            img {
+                height: 36px;
+            }
+        }
+        &:hover {
+            p {
+                border-bottom: 1px dashed black;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.lotus-box {
+    .symbol-lotus {
+        pointer-events: none;
+    }
+}
+
+.conch-box {
+    .symbol-conch {
+        pointer-events: none;
+    }
+}
+
+.parasol-box {
+    .symbol-parasol {
+        pointer-events: none;
+    }
+}
+
+.dhvaja-box {
+    .symbol-dhvaja {
+        pointer-events: none;
+    }
+}
+
+.fish-box {
+    .symbol-fish {
+        pointer-events: none;
+    }
+}
+
+.knot-box {
+    .symbol-knot {
+        pointer-events: none;
+    }
+}
+
+.dharmachakra-box {
+    .symbol-dharmachakra {
+        pointer-events: none;
+    }
+}
+
+.vase-box {
+    .symbol-vase {
+        pointer-events: none;
+    }
+}
+
+
+
+//Stuff to remove after development - temporary stuff
+
+// .info-box {
+//     display: none;
+// }
+
+// #vase-box {
+//     display: inline-block;
+// }
+
+//////////////////////////////////
+// Media queries //
+//////////////////////////////////
+
+@media screen and (min-width: 1900px) {
+    .background {
+        width: 1000px;
+        height: 1000px;
+    }
+
+    .info-side {
+        width: 800px;
+    }
+
+    .info-box {
+        max-height: 900px;
+        width: 708px;
+    }
+
+    .intro-image {
+        width: 200px;
+    }
+
+    .intro-text {
+        width: 480px;
+    }
+
+    .info-sub {
+        .intro-text {
+            width: 480px;
+        }
+        .intro-image {
+            width: 200px;
+        }
+
+        .intro {
+            min-height: 280px;
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .background {
+        width: 640px;
+        height: 640px;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .info-side {
+        width: 640px;
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    .info-box {
+        max-height: 540px;
+    }
+
+    .intro {
+        min-height: 270px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .info-side {
+        width: 560px;
+    }
+
+    .intro {
+        min-height: 250px;
+    }
+}

@@ -1,0 +1,126 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass"; // Include if you want Compass mixins
+@import "compass/reset";
+
+//Variables
+$anim-duration: 1s;
+
+@include keyframes (body-fade-in) {
+	0% { opacity: 0; }
+	50% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+body {
+	overflow-x: hidden;
+	@include animation(body-fade-in 1s linear forwards);
+}
+
+.logo-wrapper {
+	position: relative;
+	top: 20px;
+	left: 20px;
+}
+
+.inxd-logo {
+	position: absolute;
+	width: 500px;
+	height: auto;
+}
+
+@include keyframes(fade-others) {
+	0% {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+@include keyframes(move-i-dot) {
+	0% {
+		@include transform(translate(0, 0));
+	}
+	100% {
+		@include transform(translate(209%, 0));
+	}
+}
+
+@include keyframes(move-x-large) {
+	0% {
+		@include transform(rotate(0) translate(0, 0) scale(1));
+	}
+	100% {
+		@include transform(rotate(-39.5deg) translate(215%, -29%) scale(1.59));
+	}
+}
+
+@include keyframes(move-d) {
+	0% {
+		@include transform(translate(0,0) scale(1));
+	}
+	100% {
+		@include transform(translate(-8%, -117%) scale(1.29));
+	}
+}
+
+@include keyframes(inxd-wordmark-fade) {
+	0% {
+		@include transform(translate(0,0));
+		opacity: 1;
+	}
+	100% {
+		@include transform(translate(0, -40px));
+		opacity: 0;
+	}
+}
+
+.fade-elements {
+	@include animation(fade-others $anim-duration ease forwards);
+}
+
+.move-i-dot {
+	@include animation(move-i-dot $anim-duration ease forwards);
+}
+
+.move-x-large {
+	@include animation(move-x-large $anim-duration ease forwards);
+}
+
+.x-large {
+	@include transform-origin(50%, 50%);
+}
+
+.move-d {
+	@include animation(move-d $anim-duration ease forwards);
+}
+
+.inxd-wordmark-fade {
+	@include animation(inxd-wordmark-fade 0.5s ease forwards);
+}
+
+.nid-logo {
+	opacity: 0.5;
+	position: absolute;
+	top: 20px;
+	left: 30px;
+	width: 351px;
+	display: none;
+}
+
+.inxd-wordmark {
+	position: absolute;
+	top: 387px;
+	width: 285px;
+}
+
+@media screen and (max-width: 768px) {
+	.inxd-logo {
+		width: 300px;
+	}
+
+	.inxd-wordmark {
+		top: 235px;
+		width: 169px;
+	}
+}

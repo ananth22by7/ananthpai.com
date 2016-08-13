@@ -1,0 +1,157 @@
+<html>
+<head>
+	<title>
+		Sakhi sign-in
+	</title>
+	<meta name="viewport" content="initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="styles/screen.css">
+	<link rel="stylesheet" href="font-awesome-4.4.0/css/font-awesome.min.css">
+	<script src="scripts/jquery-1.11.3.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	
+</head>
+
+<body>
+	
+	<img src="images/phone.png" class="img-phone" alt="">
+	<div class="title-bar">
+		<a href="landing.html" class="title-back">
+			<i class="fa fa-chevron-left"></i>
+			<p>Back</p>
+		</a>
+		<h1><i class="fa fa-child title-icon"></i>Child Details</h1>
+	</div>
+	<div class="phone-wrapper">
+
+
+
+		<div class="container child-details-container">
+			<div class="row">
+				<div class="col-xs-12">
+					<form>
+						
+						<div class="form-group">
+							<label><i class="fa fa-key form-icon"></i>Child ID: <b><i>98765432</i></b></label>
+						</div>
+
+						<div class="form-group">
+							<label><i class="fa fa-child form-icon"></i>Child: </label>
+							<p class="label-answer">Sushant Kumar</p>
+						</div>
+						
+						<div class="form-group">
+							<label><i class="fa fa-birthday-cake form-icon"></i>Age:</label>
+							<p class="label-answer">11 months</p>
+						</div>
+
+						<div class="form-group">
+							<label><i class="fa fa-female form-icon"></i>Mother:</label>
+							<p class="label-answer">Kamla Kumar</p>
+						</div>
+
+						<div class="form-group">
+							<label><i class="fa fa-male form-icon"></i>Father:</label>
+							<p class="label-answer">Manuj Kumar</p>
+						</div>
+						<div class="text-right view-more-wrapper">
+							<a href="#" class="float-left"><i class="fa fa-edit"></i>Edit details</a>
+							<a href="#"><i class="fa fa-plus"></i>View all details</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="container evaluations-container">
+				<div class="row">
+					<div class="col-xs-12">
+						<!-- <h2>Evaluations</h2> -->
+						<ul class="nav nav-tabs" role="tablist">
+						    <li role="presentation" class="active"><a href="#evaluations" aria-controls="evaluations" role="tab" data-toggle="tab">Evaluations</a></li>
+						    <li role="presentation"><a href="#milestones" aria-controls="profile" role="tab" data-toggle="tab">Milestones</a></li>
+						</ul>
+					</div>
+
+
+				</div>
+				
+				<div class="tab-content border-container">
+					<div role="tabpanel" class="tab-pane fade in active" id="evaluations">
+						<div class="row">
+							<div class="col-xs-12">
+								<a href="#" class="btn btn-primary new-evaluation-btn"><i class="fa fa-magic button-icon"></i>Start New Evaluation</a>
+							</div>
+						</div>
+						
+						<div class="row evaluation-unit">
+							<div class="col-xs-12">
+								<p class="text-center text-grey"><i>No Evaluations done yet.<br> Press <b>Start New Evaluation</b> to start one.</i></p>
+							</div>
+						</div>
+
+
+					</div>
+					<div class="tab-pane fade" id="milestones" role="tabpanel">
+						<div class="row">
+							<div class="col-xs-12">
+								<a href="#" class="btn btn-success new-evaluation-btn"><i class="fa fa-flag button-icon"></i>Create New Milestone</a>
+							</div>
+						</div>
+						
+						<div class="row evaluation-unit">
+							<div class="col-xs-12">
+								<h3>Hep B2</h3>
+							</div>
+							<div class="col-xs-12">
+								<p><i class="fa fa-calendar"></i>19 June - 24 June 2015</p>
+							</div>
+
+							<div class="col-xs-12 text-right">
+								<a href="#" class="btn btn-default btn-sm evaluation-submit">View Milestone</a>
+							</div>
+						</div>
+
+						<div class="row evaluation-unit">
+							<div class="col-xs-12">
+								<h3>IPV 3</h3>
+							</div>
+							<div class="col-xs-12">
+								<p><i class="fa fa-calendar"></i>10 July - 15 July 2015</p>
+							</div>
+
+							<div class="col-xs-12 text-right">
+								<a href="#" class="btn btn-default btn-sm evaluation-submit">View Milestone</a>
+							</div>
+						</div>
+
+						<div class="row evaluation-unit">
+							<div class="col-xs-12">
+								<h3>Typhoid</h3>
+							</div>
+							<div class="col-xs-12">
+								<p><i class="fa fa-calendar"></i>1 Aug - 6 Aug</p>
+							</div>
+
+							<div class="col-xs-12 text-right">
+								<a href="#" class="btn btn-default btn-sm evaluation-submit">View Milestone</a>
+							</div>
+
+						</div>
+						<div class="row view-all-records-btn-row">
+							<div class="col-xs-12">
+								<a class="btn btn-success btn-lg view-all-records-btn">View All Milestones</a>
+							</div>
+						</div>
+				</div>
+		</div>
+
+	</div>
+
+	<script src="scripts/scripts.js"></script>
+
+</body>
+
+</html>

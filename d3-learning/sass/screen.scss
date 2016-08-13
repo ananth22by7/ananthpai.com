@@ -1,0 +1,116 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass";
+@import "variables.scss";
+
+.bar {
+	display: inline-block;
+	width: 20px;
+	height: 75px;
+	background-color: teal;
+	margin-right: 2px;
+}
+
+.axis {
+	path, line {
+		fill: none;
+		stroke: black;
+		shape-rendering: crispEdges;
+	}
+
+	text {
+		font-family: sans-serif;
+		font-size: 12px;
+	}
+}
+
+.coloured {
+	stroke: red;
+	transition: 0.4s ease;
+}
+
+svg {
+	padding: 12px;
+	display: block;
+	width: auto;
+	max-width: 100%;
+}
+
+p {
+	display: inline-block;
+	font-family: sans-serif;
+}
+
+.or {
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-right: 8px;
+}
+
+.instruction, .or {
+	position: relative;
+	top: -4px;
+}
+
+.change {
+	display: inline-block;
+	text-align: center;
+	background-color: $change-colour;
+	padding: 12px 16px;
+	margin: 12px 6px;
+	border-radius: 4px;
+	color: white;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 36px;
+	width: 45px;
+	height: 45px;
+	position: relative;
+	top: 0;
+	@include box-shadow(0px 4px 0px darken($change-colour, 20%));
+	@include transition(0.1s ease);
+	&:hover {
+		@include transition(0.1s ease);
+		top: 1px;
+		@include box-shadow(0px 3px 0px darken($change-colour, 20%));
+	}
+	&:active {
+		@include transition(0.1s ease);
+		background-color: darken($change-colour, 6%);
+		@include box-shadow(0px 0px 0px darken($change-colour, 20%));
+		top: 4px;
+	}
+	&:first-of-type {
+		margin-left: 12px;
+	}
+}
+
+.change-remove {
+	background-color: $change-remove-colour;
+	@include box-shadow(0px 4px 0px darken($change-remove-colour, 20%));
+	@include transition(0.1s ease);
+	&:hover {
+		@include transition(0.1s ease);
+		top: 1px;
+		@include box-shadow(0px 3px 0px darken($change-remove-colour, 20%));
+	}
+	&:active {
+		@include transition(0.1s ease);
+		background-color: darken($change-remove-colour, 6%);
+		@include box-shadow(0px 0px 0px darken($change-remove-colour, 20%));
+		top: 4px;
+	}
+}
+
+.small-text {
+	font-size: 10px;
+	font-weight: normal;
+	text-transform: none;
+	display: inline-block;
+	margin-top: 3px;
+}

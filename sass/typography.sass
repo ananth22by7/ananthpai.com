@@ -1,0 +1,49 @@
+body
+  font-size: 133.33333333333333%
+  font-size-adjust: 0.5
+
+caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6
+  font-size-adjust: 0.5
+  font-family: $font-title
+  margin: 0
+
+p, ul, li, a
+  font-family: $font-body
+
+a, a:hover, a:focus
+  text-decoration: none
+  color: $c-text
+
+h2
+  font-size: 48px
+  margin-bottom: 18px
+
+p
+  font-size: 18px
+
+/************************************************/
+/************************************************/
+/* Media queries */
+/************************************************/
+/************************************************/
+
+@media screen and (max-width: 992px)
+  h2
+    font-size: 42px
+    margin-bottom: 24px
+
+  p
+    margin: 0 0 16px
+
+  .content
+    line-height: 30px
+
+@media screen and (max-width: 768px)
+  h2
+    font-size: 36px
+    line-height: 48px
+    margin-bottom: 20px
+
+  p
+    font-size: 16px
+    line-height: 27px

@@ -1,0 +1,78 @@
+/*
+Error: Undefined variable: "$font-title".
+        on line 7 of sass/typography.sass
+
+2:   font-size: 133.33333333333333%
+3:   font-size-adjust: 0.5
+4: 
+5: caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6
+6:   font-size-adjust: 0.5
+7:   font-family: $font-title
+8:   margin: 0
+9: 
+10: p, ul, li, a
+11:   font-family: $font-body
+12: 
+
+Backtrace:
+sass/typography.sass:7
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/sass-3.4.18/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/sass-3.4.18/lib/sass/script/tree/node.rb:50:in `perform'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:395:in `visit_prop'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/sass-3.4.18/lib/sass/stack.rb:79:in `block in with_base'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/sass-3.4.18/lib/sass/stack.rb:115:in `with_frame'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/sass-3.4.18/lib/sass/stack.rb:79:in `with_base'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:431:in `block (2 levels) in visit_rule'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:431:in `map'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:431:in `block in visit_rule'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:429:in `visit_rule'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/sass-3.4.18/lib/sass/stack.rb:79:in `block in with_base'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/sass-3.4.18/lib/sass/stack.rb:115:in `with_frame'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/sass-3.4.18/lib/sass/stack.rb:79:in `with_base'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/sass-3.4.18/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/sass-3.4.18/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/sass-3.4.18/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/sass-3.4.18/lib/sass/tree/root_node.rb:20:in `render'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/sass-3.4.18/lib/sass/engine.rb:278:in `render'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/sass-3.4.18/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/compass-1.0.3/lib/compass/sass_compiler.rb:40:in `compile!'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/compass-1.0.3/lib/compass/commands/update_project.rb:49:in `perform'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/compass-1.0.3/lib/compass/commands/stamp_pattern.rb:76:in `perform'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/compass-1.0.3/lib/compass/commands/base.rb:18:in `execute'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/compass-1.0.3/lib/compass/commands/project_base.rb:19:in `execute'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/compass-1.1.0.alpha.3/bin/compass:30:in `block in <top (required)>'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/compass-1.1.0.alpha.3/bin/compass:44:in `call'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/gems/compass-1.1.0.alpha.3/bin/compass:44:in `<top (required)>'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/bin/compass:23:in `load'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/bin/compass:23:in `<main>'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/bin/ruby_executable_hooks:15:in `eval'
+/Users/ananthpai/.rvm/gems/ruby-2.1.5/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$font-title\".\A         on line 7 of sass/typography.sass\A \A 2:   font-size: 133.33333333333333%\A 3:   font-size-adjust: 0.5\A 4: \A 5: caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6\A 6:   font-size-adjust: 0.5\A 7:   font-family: $font-title\A 8:   margin: 0\A 9: \A 10: p, ul, li, a\A 11:   font-family: $font-body\A 12: "; }

@@ -1,0 +1,362 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@-moz-keyframes body-fade-in {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes body-fade-in {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes body-fade-in {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* line 18, ../sass/screen.scss */
+body {
+  overflow-x: hidden;
+  -moz-animation: body-fade-in 1s linear forwards;
+  -webkit-animation: body-fade-in 1s linear forwards;
+  animation: body-fade-in 1s linear forwards;
+}
+
+/* line 23, ../sass/screen.scss */
+.logo-wrapper {
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+/* line 29, ../sass/screen.scss */
+.inxd-logo {
+  position: absolute;
+  width: 500px;
+  height: auto;
+}
+
+@-moz-keyframes fade-others {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fade-others {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade-others {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes move-i-dot {
+  0% {
+    -moz-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  100% {
+    -moz-transform: translate(209%, 0);
+    transform: translate(209%, 0);
+  }
+}
+@-webkit-keyframes move-i-dot {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(209%, 0);
+    transform: translate(209%, 0);
+  }
+}
+@keyframes move-i-dot {
+  0% {
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  100% {
+    -moz-transform: translate(209%, 0);
+    -ms-transform: translate(209%, 0);
+    -webkit-transform: translate(209%, 0);
+    transform: translate(209%, 0);
+  }
+}
+@-moz-keyframes move-x-large {
+  0% {
+    -moz-transform: rotate(0) translate(0, 0) scale(1);
+    transform: rotate(0) translate(0, 0) scale(1);
+  }
+  100% {
+    -moz-transform: rotate(-39.5deg) translate(215%, -29%) scale(1.59);
+    transform: rotate(-39.5deg) translate(215%, -29%) scale(1.59);
+  }
+}
+@-webkit-keyframes move-x-large {
+  0% {
+    -webkit-transform: rotate(0) translate(0, 0) scale(1);
+    transform: rotate(0) translate(0, 0) scale(1);
+  }
+  100% {
+    -webkit-transform: rotate(-39.5deg) translate(215%, -29%) scale(1.59);
+    transform: rotate(-39.5deg) translate(215%, -29%) scale(1.59);
+  }
+}
+@keyframes move-x-large {
+  0% {
+    -moz-transform: rotate(0) translate(0, 0) scale(1);
+    -ms-transform: rotate(0) translate(0, 0) scale(1);
+    -webkit-transform: rotate(0) translate(0, 0) scale(1);
+    transform: rotate(0) translate(0, 0) scale(1);
+  }
+  100% {
+    -moz-transform: rotate(-39.5deg) translate(215%, -29%) scale(1.59);
+    -ms-transform: rotate(-39.5deg) translate(215%, -29%) scale(1.59);
+    -webkit-transform: rotate(-39.5deg) translate(215%, -29%) scale(1.59);
+    transform: rotate(-39.5deg) translate(215%, -29%) scale(1.59);
+  }
+}
+@-moz-keyframes move-d {
+  0% {
+    -moz-transform: translate(0, 0) scale(1);
+    transform: translate(0, 0) scale(1);
+  }
+  100% {
+    -moz-transform: translate(-8%, -117%) scale(1.29);
+    transform: translate(-8%, -117%) scale(1.29);
+  }
+}
+@-webkit-keyframes move-d {
+  0% {
+    -webkit-transform: translate(0, 0) scale(1);
+    transform: translate(0, 0) scale(1);
+  }
+  100% {
+    -webkit-transform: translate(-8%, -117%) scale(1.29);
+    transform: translate(-8%, -117%) scale(1.29);
+  }
+}
+@keyframes move-d {
+  0% {
+    -moz-transform: translate(0, 0) scale(1);
+    -ms-transform: translate(0, 0) scale(1);
+    -webkit-transform: translate(0, 0) scale(1);
+    transform: translate(0, 0) scale(1);
+  }
+  100% {
+    -moz-transform: translate(-8%, -117%) scale(1.29);
+    -ms-transform: translate(-8%, -117%) scale(1.29);
+    -webkit-transform: translate(-8%, -117%) scale(1.29);
+    transform: translate(-8%, -117%) scale(1.29);
+  }
+}
+@-moz-keyframes inxd-wordmark-fade {
+  0% {
+    -moz-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    -moz-transform: translate(0, -40px);
+    transform: translate(0, -40px);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes inxd-wordmark-fade {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(0, -40px);
+    transform: translate(0, -40px);
+    opacity: 0;
+  }
+}
+@keyframes inxd-wordmark-fade {
+  0% {
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    -moz-transform: translate(0, -40px);
+    -ms-transform: translate(0, -40px);
+    -webkit-transform: translate(0, -40px);
+    transform: translate(0, -40px);
+    opacity: 0;
+  }
+}
+/* line 78, ../sass/screen.scss */
+.fade-elements {
+  -moz-animation: fade-others 1s ease forwards;
+  -webkit-animation: fade-others 1s ease forwards;
+  animation: fade-others 1s ease forwards;
+}
+
+/* line 82, ../sass/screen.scss */
+.move-i-dot {
+  -moz-animation: move-i-dot 1s ease forwards;
+  -webkit-animation: move-i-dot 1s ease forwards;
+  animation: move-i-dot 1s ease forwards;
+}
+
+/* line 86, ../sass/screen.scss */
+.move-x-large {
+  -moz-animation: move-x-large 1s ease forwards;
+  -webkit-animation: move-x-large 1s ease forwards;
+  animation: move-x-large 1s ease forwards;
+}
+
+/* line 90, ../sass/screen.scss */
+.x-large {
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+
+/* line 94, ../sass/screen.scss */
+.move-d {
+  -moz-animation: move-d 1s ease forwards;
+  -webkit-animation: move-d 1s ease forwards;
+  animation: move-d 1s ease forwards;
+}
+
+/* line 98, ../sass/screen.scss */
+.inxd-wordmark-fade {
+  -moz-animation: inxd-wordmark-fade 0.5s ease forwards;
+  -webkit-animation: inxd-wordmark-fade 0.5s ease forwards;
+  animation: inxd-wordmark-fade 0.5s ease forwards;
+}
+
+/* line 102, ../sass/screen.scss */
+.nid-logo {
+  opacity: 0.5;
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  width: 351px;
+  display: none;
+}
+
+/* line 111, ../sass/screen.scss */
+.inxd-wordmark {
+  position: absolute;
+  top: 387px;
+  width: 285px;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 118, ../sass/screen.scss */
+  .inxd-logo {
+    width: 300px;
+  }
+
+  /* line 122, ../sass/screen.scss */
+  .inxd-wordmark {
+    top: 235px;
+    width: 169px;
+  }
+}

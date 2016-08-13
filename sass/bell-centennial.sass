@@ -1,0 +1,186 @@
+//Typography
+
+@font-face
+  font-family: "bc-bold"
+  src: url('../new-fonts/Bell-Centennial-Std-Bold-Listing_6528.ttf') format("truetype")
+
+@font-face
+  font-family: "bc-number"
+  src: url('../new-fonts/Bell-Centennial-Std-Name---Number_6529.ttf') format("truetype")
+
+@font-face
+  font-family: "bc-address"
+  src: url('../new-fonts/Bell-Centennial-Std-Address_6527.ttf') format("truetype")
+
+p, h1, h2, h3, a
+  color: #312926
+
+a
+  color: darken(#37b6c8, 7%)
+  &:hover, &:active, &:focus
+    color: darken(#37b6c8, 7%)
+    border-bottom: 1px dotted darken(#37b6c8, 7%)
+
+h1, h2, h3
+  font-family: "bc-bold", helvetica, sans-serif
+  font-size: 32px
+
+h1
+  margin-bottom: 12px
+
+h3
+  font-size: 20px
+
+.intro-caption, .para-caption
+  font-family: "bc-number", helvetica, sans-serif
+
+p, a
+  font-family: "bc-address", helvetica, sans-serif
+  font-size: 16px
+  line-height: 1.6
+
+.para-caption
+  font-size: 16px
+  margin-top: 8px
+  margin-bottom: 10px
+  line-height: 1.6
+
+//Rest of code
+
+.bell-bg
+  background: url(../images/bg.jpg) repeat center center
+  -webkit-background-size: 100% auto
+  -moz-background-size: 100% auto
+  -o-background-size: 100% auto
+  background-size: 100% auto
+
+.cover-spread-wrapper
+  overflow: hidden
+  width: 100%
+  position: absolute
+
+.cover-spread
+  position: relative
+  top: -85px
+  img
+    display: inline-block
+    height: 378px
+
+.bell-b
+  position: absolute
+  left: -491px
+
+.bell-ell
+  padding-left: 2px
+
+.section-intro
+  padding-top: 347px
+  line-height: 1.6
+
+.intro-caption
+  padding-bottom: 14px
+
+.index
+  padding: 14px 16px
+  border: 1px dotted #312926
+  display: inline-block
+  li
+    font-size: 16px
+    list-style: none
+    &:first-child
+      font-family: "bc-number", helvetica, sans-serif
+  a
+    font-family: "bc-address", helvetica, sans-serif
+
+
+.section-para
+  padding-top: 32px
+  img
+    padding: 24px
+    border: 1px dotted #312926
+    width: auto
+    max-width: 100%
+    display: inline-block
+    position: relative
+
+.para-img 
+  margin-top: 24px
+  margin-bottom: 24px
+
+.img-caption
+  font-size: 12px
+  display: inline-block
+  position: relative
+  left: -10px
+
+.dotted-line
+  border-bottom: 1px dotted #312926
+  width: 100%
+  margin: 34px 0 10px
+
+.section-references
+  .para-title
+    margin-bottom: 16px
+
+.section-sign-off
+  padding-top: 12px
+  padding-bottom: 24px
+  p
+    font-size: 12px
+    opacity: 0.4
+
+@media screen and (max-width: 992px)
+  
+  .cover-spread-wrapper
+    position: static
+
+  .cover-img-wrapper
+    white-space: nowrap
+
+  .cover-spread
+    top: -60px
+    img
+      height: 200px
+
+  .bell-b
+    position: static
+    display: inline-block
+
+  .bell-ell
+    padding-left: 0
+    display: inline-block
+
+  .section-intro
+    padding-top: 0
+
+@media screen and (max-width: 768px)
+
+  .para-img
+    img
+      width: auto
+      max-width: 100%
+    .img-caption
+      left: 0
+      margin-top: 16px
+      display: inline-block
+
+@media screen and (max-width: 480px)
+  
+  h1
+    font-size: 28px
+    margin-top: 12px
+  
+  .intro-caption
+    margin-bottom: 4px
+
+  .cover-spread
+    top: -30px
+    img
+      height: 100px
+
+    .bell-ell
+      margin-left: -4px
+
+    .para-img
+      .img-caption
+        margin-bottom: 0

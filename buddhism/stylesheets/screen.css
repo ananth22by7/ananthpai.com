@@ -1,0 +1,935 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../.rvm/gems/ruby-2.1.5/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 9, ../sass/screen.scss */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* line 13, ../sass/screen.scss */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* line 17, ../sass/screen.scss */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #ccc;
+}
+
+/* line 23, ../sass/screen.scss */
+.btn-close {
+  cursor: pointer;
+  opacity: 0.3;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  z-index: 10;
+}
+/* line 33, ../sass/screen.scss */
+.btn-close:hover {
+  opacity: 1;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+/* line 39, ../sass/screen.scss */
+.background {
+  position: relative;
+  height: 800px;
+  width: 800px;
+  background: transparent url("../images/bg.png") no-repeat center center;
+  background-size: cover;
+  margin: 6px 0 6px 8px;
+}
+/* line 46, ../sass/screen.scss */
+.background img {
+  position: absolute;
+  cursor: pointer;
+  z-index: 2;
+  opacity: 0;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+/* line 55, ../sass/screen.scss */
+.overlay {
+  background: black;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+  -moz-transition: ease-in-out 0.2s;
+  -o-transition: ease-in-out 0.2s;
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+}
+
+/* line 64, ../sass/screen.scss */
+.centre-hands {
+  width: 27.125%;
+  left: 37.5%;
+  top: 43.5%;
+}
+
+/* line 70, ../sass/screen.scss */
+.centre-lotus-1 {
+  width: 17.125%;
+  left: 32.375%;
+  top: 28.875%;
+}
+
+/* line 76, ../sass/screen.scss */
+.centre-lotus-2 {
+  width: 16.875%;
+  left: 50.75%;
+  top: 26.125%;
+}
+
+/* line 82, ../sass/screen.scss */
+.north-hand-main {
+  width: 11.75%;
+  left: 36.875%;
+  top: 6.75%;
+}
+
+/* line 88, ../sass/screen.scss */
+.north-vajra {
+  width: 14.625%;
+  left: 50.25%;
+  top: 9.375%;
+}
+
+/* line 94, ../sass/screen.scss */
+.north-hand-sub-1 {
+  width: 10.125%;
+  left: 23.875%;
+  top: 2.75%;
+}
+
+/* line 100, ../sass/screen.scss */
+.north-hand-sub-2 {
+  width: 9.375%;
+  left: 64%;
+  top: 2.125%;
+}
+
+/* line 106, ../sass/screen.scss */
+.west-hands {
+  width: 11.1875%;
+  left: 11.25%;
+  top: 36.875%;
+}
+
+/* line 112, ../sass/screen.scss */
+.west-lotus-1 {
+  width: 12.25%;
+  left: 0.625%;
+  top: 53%;
+}
+
+/* line 118, ../sass/screen.scss */
+.west-lotus-2 {
+  width: 12.125%;
+  left: 1%;
+  top: 35.125%;
+}
+
+/* line 124, ../sass/screen.scss */
+.south-chintamani {
+  width: 8.375%;
+  top: 76.857%;
+  left: 42.75%;
+}
+
+/* line 130, ../sass/screen.scss */
+.south-hand-main {
+  width: 6.625%;
+  top: 75%;
+  left: 54.375%;
+}
+
+/* line 136, ../sass/screen.scss */
+.south-lotus {
+  width: 15.875%;
+  left: 29.125%;
+  top: 85.5%;
+  -moz-transform: rotate(-24deg);
+  -ms-transform: rotate(-24deg);
+  -webkit-transform: rotate(-24deg);
+  transform: rotate(-24deg);
+}
+
+/* line 143, ../sass/screen.scss */
+.south-hand-sub {
+  width: 6.5%;
+  left: 62.375%;
+  top: 89.125%;
+}
+
+/* line 149, ../sass/screen.scss */
+.east-hand-main {
+  width: 16%;
+  left: 76.375%;
+  top: 38.5%;
+}
+
+/* line 155, ../sass/screen.scss */
+.east-vajra {
+  width: 12.625%;
+  left: 77%;
+  top: 54.625%;
+}
+
+/* line 161, ../sass/screen.scss */
+.east-hand-sub-1 {
+  width: 11.5%;
+  left: 88%;
+  top: 26.625%;
+}
+
+/* line 167, ../sass/screen.scss */
+.east-hand-sub-2 {
+  width: 10%;
+  left: 87.75%;
+  top: 61%;
+}
+
+/* line 173, ../sass/screen.scss */
+.corner-lotus {
+  width: 17.875%;
+  left: 9.875%;
+  top: 16.375%;
+  -moz-transform: rotate(-38deg);
+  -ms-transform: rotate(-38deg);
+  -webkit-transform: rotate(-38deg);
+  transform: rotate(-38deg);
+}
+
+/* line 180, ../sass/screen.scss */
+.corner-conch {
+  width: 9.375%;
+  left: 4.5%;
+  top: 1.5%;
+  -moz-transform: rotate(-43deg);
+  -ms-transform: rotate(-43deg);
+  -webkit-transform: rotate(-43deg);
+  transform: rotate(-43deg);
+}
+
+/* line 187, ../sass/screen.scss */
+.corner-dhvaja {
+  width: 10.25%;
+  left: 74.125%;
+  top: 12%;
+  -moz-transform: rotate(43deg);
+  -ms-transform: rotate(43deg);
+  -webkit-transform: rotate(43deg);
+  transform: rotate(43deg);
+}
+
+/* line 194, ../sass/screen.scss */
+.corner-parasol {
+  width: 14.25%;
+  left: 84.125%;
+  top: 2.25%;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* line 201, ../sass/screen.scss */
+.corner-dharmachakra {
+  width: 13.875%;
+  left: 73%;
+  top: 72.75%;
+}
+
+/* line 207, ../sass/screen.scss */
+.corner-vase {
+  width: 11.25%;
+  left: 85.75%;
+  top: 84.375%;
+  -moz-transform: rotate(-44deg);
+  -ms-transform: rotate(-44deg);
+  -webkit-transform: rotate(-44deg);
+  transform: rotate(-44deg);
+}
+
+/* line 214, ../sass/screen.scss */
+.corner-fish {
+  width: 12.75%;
+  left: 13.375%;
+  top: 73.375%;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* line 221, ../sass/screen.scss */
+.corner-knot {
+  width: 9.25%;
+  left: 4.25%;
+  top: 86%;
+}
+
+/* line 227, ../sass/screen.scss */
+.background, .info-side {
+  display: inline-block;
+  float: left;
+}
+
+/***********************/
+/* Info side stuff */
+/***********************/
+/* line 236, ../sass/screen.scss */
+.info-side {
+  margin: 6px 8px;
+  width: 580px;
+  position: relative;
+}
+
+/* line 242, ../sass/screen.scss */
+.info-box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: white;
+  border: 30px solid black;
+  padding: 16px;
+  padding-bottom: 24px;
+  overflow: auto;
+  max-height: 700px;
+  display: none;
+}
+
+/* line 256, ../sass/screen.scss */
+.info-main {
+  display: block;
+  border-image: url("../images/border-colourful.jpg") 90 90 round;
+}
+/* line 259, ../sass/screen.scss */
+.info-main .intro {
+  height: auto;
+  min-height: 0;
+  margin-bottom: 24px;
+}
+/* line 264, ../sass/screen.scss */
+.info-main .intro-text {
+  width: auto;
+  text-align: center;
+  float: none;
+}
+/* line 268, ../sass/screen.scss */
+.info-main .intro-text p {
+  font-size: 14px;
+  padding: 0 18px;
+  margin-bottom: 10px;
+}
+/* line 274, ../sass/screen.scss */
+.info-main .mandala-layout {
+  width: 360px;
+  margin: 0 auto 12px;
+  display: block;
+  border: 2px solid #c3c3c3;
+}
+
+/* line 282, ../sass/screen.scss */
+h2 {
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-weight: 900;
+  text-align: center;
+  font-size: 36px;
+  margin-top: 6px;
+}
+
+/* line 290, ../sass/screen.scss */
+h3 {
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 24px;
+  font-size: 20px;
+}
+/* line 299, ../sass/screen.scss */
+h3.alternate {
+  font-style: normal;
+  text-align: center;
+  font-size: 24px;
+}
+
+/* line 306, ../sass/screen.scss */
+h4 {
+  font-family: 'Karla', helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* line 312, ../sass/screen.scss */
+b {
+  font-weight: bold;
+}
+
+/* line 316, ../sass/screen.scss */
+p {
+  font-family: 'Karla', helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+/* line 323, ../sass/screen.scss */
+.intro {
+  min-height: 250px;
+  margin-bottom: 36px;
+}
+
+/* line 328, ../sass/screen.scss */
+.intro-text {
+  width: 59%;
+  display: inline-block;
+}
+
+/* line 334, ../sass/screen.scss */
+.intro-image {
+  float: right;
+  display: inline-block;
+  width: 39%;
+}
+
+/* line 340, ../sass/screen.scss */
+.icons {
+  min-height: 120px;
+  margin-bottom: 30px;
+}
+/* line 343, ../sass/screen.scss */
+.icons .box {
+  float: left;
+  text-align: center;
+  width: 25%;
+  display: inline-block;
+}
+/* line 349, ../sass/screen.scss */
+.icons img {
+  width: 60px;
+  margin-bottom: 12px;
+}
+/* line 353, ../sass/screen.scss */
+.icons p {
+  color: #333;
+}
+
+/* line 359, ../sass/screen.scss */
+.mudra-symbol {
+  min-height: 250px;
+}
+/* line 361, ../sass/screen.scss */
+.mudra-symbol .box {
+  float: left;
+  text-align: center;
+  width: 48%;
+  display: inline-block;
+  padding: 0 1%;
+}
+/* line 368, ../sass/screen.scss */
+.mudra-symbol img {
+  width: 120px;
+  margin-bottom: 18px;
+}
+/* line 372, ../sass/screen.scss */
+.mudra-symbol h4 {
+  margin-bottom: 6px;
+}
+
+/* line 377, ../sass/screen.scss */
+.chants {
+  text-align: center;
+}
+/* line 379, ../sass/screen.scss */
+.chants p {
+  font-weight: bold;
+}
+/* line 382, ../sass/screen.scss */
+.chants h3 {
+  margin-bottom: 24px;
+}
+/* line 385, ../sass/screen.scss */
+.chants img {
+  height: 60px;
+  margin-bottom: 8px;
+}
+/* line 389, ../sass/screen.scss */
+.chants .box {
+  width: 47%;
+  padding: 0 1%;
+  display: inline-block;
+}
+/* line 394, ../sass/screen.scss */
+.chants .seed-syllable {
+  margin-top: 24px;
+}
+/* line 396, ../sass/screen.scss */
+.chants .seed-syllable h4 {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+/* line 403, ../sass/screen.scss */
+.centre-main {
+  border-image: url("../images/border-unit-white.jpg") 90 90 round;
+}
+/* line 406, ../sass/screen.scss */
+.centre-main .chants .img-1 {
+  height: 60px;
+}
+/* line 409, ../sass/screen.scss */
+.centre-main .chants .img-2 {
+  height: 48px;
+  margin-bottom: 9px;
+}
+/* line 415, ../sass/screen.scss */
+.centre-main .seed-syllable img {
+  height: 40px;
+}
+
+/* line 423, ../sass/screen.scss */
+.info-sub .intro {
+  min-height: 192px;
+}
+/* line 426, ../sass/screen.scss */
+.info-sub .intro-text {
+  width: 69%;
+}
+/* line 429, ../sass/screen.scss */
+.info-sub .intro-image {
+  width: 29%;
+}
+/* line 432, ../sass/screen.scss */
+.info-sub .mudra-symbol {
+  min-height: 175px;
+}
+/* line 435, ../sass/screen.scss */
+.info-sub .chants {
+  margin-top: 24px;
+}
+/* line 437, ../sass/screen.scss */
+.info-sub .chants img {
+  width: 200px;
+  height: auto;
+}
+/* line 443, ../sass/screen.scss */
+.info-sub .seed-syllable img {
+  width: 60px;
+}
+
+/* line 449, ../sass/screen.scss */
+.centre-sub {
+  border-image: url("../images/border-unit-white.jpg") 90 90 round;
+}
+/* line 451, ../sass/screen.scss */
+.centre-sub .mudra-box {
+  margin-top: 26px;
+}
+
+/* line 456, ../sass/screen.scss */
+.west-main {
+  border-image: url("../images/border-red.jpg") 90 90 round;
+}
+/* line 459, ../sass/screen.scss */
+.west-main .chants .img-1 {
+  height: 60px;
+}
+/* line 462, ../sass/screen.scss */
+.west-main .chants .img-2 {
+  height: 40px;
+  margin-bottom: 9px;
+}
+/* line 467, ../sass/screen.scss */
+.west-main .mudra-symbol {
+  min-height: 210px;
+}
+/* line 469, ../sass/screen.scss */
+.west-main .mudra-symbol .box {
+  float: none;
+  width: 47.5%;
+}
+/* line 473, ../sass/screen.scss */
+.west-main .mudra-symbol img {
+  width: 170px;
+}
+
+/* line 479, ../sass/screen.scss */
+.west-sub {
+  border-image: url("../images/border-red.jpg") 90 90 round;
+}
+
+/* line 483, ../sass/screen.scss */
+.east-main {
+  border-image: url("../images/border-blue.png") 90 90 round;
+}
+/* line 485, ../sass/screen.scss */
+.east-main .mudra-symbol {
+  min-height: 300px;
+}
+/* line 487, ../sass/screen.scss */
+.east-main .mudra-symbol img {
+  height: 150px;
+  width: auto;
+}
+/* line 493, ../sass/screen.scss */
+.east-main .chants img {
+  height: 60px;
+  margin-bottom: 12px;
+}
+
+/* line 500, ../sass/screen.scss */
+.east-sub {
+  border-image: url("../images/border-blue.png") 90 90 round;
+}
+/* line 503, ../sass/screen.scss */
+.east-sub .mudra-symbol .box {
+  float: none;
+  width: 47.5%;
+}
+/* line 509, ../sass/screen.scss */
+.east-sub .mudra-box img {
+  width: 110px;
+}
+/* line 514, ../sass/screen.scss */
+.east-sub .symbol-box img {
+  width: 140px;
+}
+
+/* line 520, ../sass/screen.scss */
+.north-main {
+  border-image: url("../images/border-green.jpg") 90 90 round;
+}
+/* line 523, ../sass/screen.scss */
+.north-main .mudra-symbol img {
+  height: 120px;
+  width: auto;
+}
+/* line 529, ../sass/screen.scss */
+.north-main .chants img {
+  height: 40px;
+}
+
+/* line 540, ../sass/screen.scss */
+.north-sub {
+  border-image: url("../images/border-green.jpg") 90 90 round;
+}
+/* line 543, ../sass/screen.scss */
+.north-sub .mudra-symbol img {
+  height: 140px;
+  width: auto;
+}
+
+/* line 551, ../sass/screen.scss */
+.south-main {
+  border-image: url("../images/border-yellow.jpg") 90 90 round;
+}
+/* line 554, ../sass/screen.scss */
+.south-main .mudra-symbol img {
+  height: 140px;
+  width: auto;
+}
+/* line 560, ../sass/screen.scss */
+.south-main .chants img {
+  height: 48px;
+}
+
+/* line 566, ../sass/screen.scss */
+.south-sub {
+  border-image: url("../images/border-yellow.jpg") 90 90 round;
+}
+/* line 569, ../sass/screen.scss */
+.south-sub .mudra-symbol img {
+  height: 120px;
+  width: auto;
+}
+
+/* line 586, ../sass/screen.scss */
+.ashtamangala-box {
+  text-align: center;
+}
+/* line 588, ../sass/screen.scss */
+.ashtamangala-box .intro {
+  height: auto;
+  min-height: 0;
+  margin-bottom: 24px;
+}
+/* line 593, ../sass/screen.scss */
+.ashtamangala-box .intro-text {
+  float: none;
+  width: auto;
+  padding: 0 8%;
+}
+/* line 598, ../sass/screen.scss */
+.ashtamangala-box h3 {
+  margin-bottom: 16px;
+}
+
+/* line 603, ../sass/screen.scss */
+.ashtamangala-symbol {
+  width: 100px;
+  margin: 24px auto;
+  display: block;
+}
+
+/* line 609, ../sass/screen.scss */
+.ashtamangala-intro {
+  padding: 0 8%;
+}
+
+/* line 613, ../sass/screen.scss */
+.ashtamangala-box {
+  border-image: url("../images/border-colourful.jpg") 90 90 round;
+}
+
+/* line 618, ../sass/screen.scss */
+.lotus-box .ashtamangala-symbol {
+  width: 300px;
+}
+
+/* line 624, ../sass/screen.scss */
+.parasol-box .ashtamangala-symbol, .fish-box .ashtamangala-symbol, .knot-box .ashtamangala-symbol, .dharmachakra-box .ashtamangala-symbol {
+  width: 140px;
+}
+
+/* line 629, ../sass/screen.scss */
+.ashtamangala-index {
+  margin: 12px;
+}
+/* line 631, ../sass/screen.scss */
+.ashtamangala-index .row {
+  padding: 12px 0;
+}
+/* line 634, ../sass/screen.scss */
+.ashtamangala-index .symbol-box {
+  cursor: pointer;
+  width: 24.3%;
+  display: inline-block;
+  text-align: center;
+}
+/* line 639, ../sass/screen.scss */
+.ashtamangala-index .symbol-box img {
+  height: 60px;
+  display: block;
+  margin: 0 auto;
+}
+/* line 644, ../sass/screen.scss */
+.ashtamangala-index .symbol-box p {
+  border-bottom: 1px dashed transparent;
+  display: inline-block;
+  margin-top: 8px;
+  padding-bottom: 2px;
+}
+/* line 651, ../sass/screen.scss */
+.ashtamangala-index .symbol-box.symbol-lotus img {
+  height: 36px;
+}
+/* line 656, ../sass/screen.scss */
+.ashtamangala-index .symbol-box:hover p {
+  border-bottom: 1px dashed black;
+  font-weight: bold;
+}
+
+/* line 665, ../sass/screen.scss */
+.lotus-box .symbol-lotus {
+  pointer-events: none;
+}
+
+/* line 671, ../sass/screen.scss */
+.conch-box .symbol-conch {
+  pointer-events: none;
+}
+
+/* line 677, ../sass/screen.scss */
+.parasol-box .symbol-parasol {
+  pointer-events: none;
+}
+
+/* line 683, ../sass/screen.scss */
+.dhvaja-box .symbol-dhvaja {
+  pointer-events: none;
+}
+
+/* line 689, ../sass/screen.scss */
+.fish-box .symbol-fish {
+  pointer-events: none;
+}
+
+/* line 695, ../sass/screen.scss */
+.knot-box .symbol-knot {
+  pointer-events: none;
+}
+
+/* line 701, ../sass/screen.scss */
+.dharmachakra-box .symbol-dharmachakra {
+  pointer-events: none;
+}
+
+/* line 707, ../sass/screen.scss */
+.vase-box .symbol-vase {
+  pointer-events: none;
+}
+
+@media screen and (min-width: 1900px) {
+  /* line 729, ../sass/screen.scss */
+  .background {
+    width: 1000px;
+    height: 1000px;
+  }
+
+  /* line 734, ../sass/screen.scss */
+  .info-side {
+    width: 800px;
+  }
+
+  /* line 738, ../sass/screen.scss */
+  .info-box {
+    max-height: 900px;
+    width: 708px;
+  }
+
+  /* line 743, ../sass/screen.scss */
+  .intro-image {
+    width: 200px;
+  }
+
+  /* line 747, ../sass/screen.scss */
+  .intro-text {
+    width: 480px;
+  }
+
+  /* line 752, ../sass/screen.scss */
+  .info-sub .intro-text {
+    width: 480px;
+  }
+  /* line 755, ../sass/screen.scss */
+  .info-sub .intro-image {
+    width: 200px;
+  }
+  /* line 759, ../sass/screen.scss */
+  .info-sub .intro {
+    min-height: 280px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  /* line 766, ../sass/screen.scss */
+  .background {
+    width: 640px;
+    height: 640px;
+    margin-top: 0;
+    margin-left: 0;
+  }
+
+  /* line 773, ../sass/screen.scss */
+  .info-side {
+    width: 640px;
+    margin-top: 0;
+    margin-right: 0;
+  }
+
+  /* line 779, ../sass/screen.scss */
+  .info-box {
+    max-height: 540px;
+  }
+
+  /* line 783, ../sass/screen.scss */
+  .intro {
+    min-height: 270px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  /* line 789, ../sass/screen.scss */
+  .info-side {
+    width: 560px;
+  }
+
+  /* line 793, ../sass/screen.scss */
+  .intro {
+    min-height: 250px;
+  }
+}

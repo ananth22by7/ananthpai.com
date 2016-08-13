@@ -1,0 +1,348 @@
+<html>
+<head>
+	<title>
+		Sakhi sign-in
+	</title>
+	<meta name="viewport" content="initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="styles/screen.css">
+	<link rel="stylesheet" href="font-awesome-4.4.0/css/font-awesome.min.css">
+	<script src="scripts/jquery-1.11.3.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="scripts/uilang.js"></script>
+
+</head>
+
+<body>
+	<img src="images/phone.png" class="img-phone" alt="">
+	<div class="phone-wrapper">
+		<div class="container landing-page-accordion-container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+					  <div class="panel panel-default">
+					    <div class="panel-heading blue-panel" role="tab" id="headingOne">
+					    	<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+					      	<h4 class="panel-title">
+					          <i class="fa fa-quote-right accordion-icon"></i><img src="images/prasnavalli.png" alt="" class="prasnavalli-title"> 
+						    </h4>
+					      </a>
+					    </div>
+					    <div id="collapseOne" class="panel-collapse collapse q1-wrapper" role="tabpanel" aria-labelledby="headingOne">
+					      <div class="panel-body q1" id="q1-panel">
+					        <p class="game-question">1. What symptoms is the child showing?</p>
+
+					        <div class="row">
+					        	<div class="col-xs-6">
+					        		<p class="grid-answer" id="answer1">
+					        			<img src="images/coughing.png" alt=""><br />
+					        			Constant cough
+					        		</p>
+					        	</div>
+					        	<div class="col-xs-6">
+					        		<p href="#" class="grid-answer" id="answer2">
+					        			<img src="images/underweight.png" alt=""><br />
+					        			Underweight
+					        		</p>
+					        	</div>
+					        </div>
+
+					        <div class="row">
+					        	<div class="col-xs-6">
+					        		<p href="#" class="grid-answer" id="answer3">
+					        			<img src="images/rapid-breathing.png" alt=""><br />
+					        			Rapid breathing
+					        		</p>
+					        	</div>
+					        	<div class="col-xs-6">
+					        		<p href="#" class="grid-answer" id="answer4">
+					        			<img src="images/vomiting.png" alt=""><br />
+					        			Vomiting
+					        		</p>
+					        	</div>
+					        </div>
+
+					        <div class="row">
+					        	<div class="col-xs-6">
+					        		<p href="#" class="grid-answer" id="answer5">
+					        			<img src="images/fever.png" alt=""><br />
+					        			Fever
+					        		</p>
+					        	</div>
+					        	<div class="col-xs-6">
+					        		<p href="#" class="grid-answer" id="answer6">
+					        			<img src="images/loose-motions.png" alt=""><br />
+					        			Loose motions
+					        		</p>
+					        	</div>
+					        </div>
+					        <div class="submit-row">
+					        	<a href="#" class="form-next-btn next-disable" id="q1-next">Next<i class="fa fa-chevron-right"></i></a>
+					        </div>
+					      </div>
+                
+                <div class="panel-body q2 invisible" id="q2-panel">
+                  <p class="game-question">2. Is the child coughing?</p>
+
+                  <form>
+                    <input type="radio" name="q2" class="q2-answer"> Yes
+                    <br>
+                    <input type="radio" name="q2" class="q2-answer"> Slightly
+                    <br>
+                    <input type="radio" name="q2" class="q2-answer"> No
+                  </form>
+                  <div class="submit-row">
+                    <a href="#" class="form-back-btn" id="q2-back"><i class="fa fa-chevron-left"></i>Back</a>
+                    <a href="#" class="form-next-btn next-disable" id="q2-next">Next<i class="fa fa-chevron-right"></i></a>
+                  </div>
+                </div>
+
+                <div class="panel-body invisible" id="q3-panel">
+                  <p class="game-question">3. Is the child irritable?</p>
+
+                    <form>
+                      <input type="radio" name="q3" class="q3-answer"> Yes
+                      <br>
+                      <input type="radio" name="q3" class="q3-answer"> Slightly
+                      <br>
+                      <input type="radio" name="q3" class="q3-answer"> No
+                    </form>
+                    <div class="submit-row">
+                      <a href="#" class="form-back-btn" id="q3-back"><i class="fa fa-chevron-left"></i>Back</a>
+                      <a href="#" class="form-next-btn next-disable" id="q3-next">Next<i class="fa fa-chevron-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="panel-body invisible" id="q12-panel">
+                  <p class="game-question">12. Does the child have fever?</p>
+                  <form>
+                    <input type="radio" name="q12" class="q12-answer"> Yes
+                    <br>
+                    <input type="radio" name="q12" class="q12-answer"> Slightly
+                    <br>
+                    <input type="radio" name="q12" class="q12-answer"> No
+                  </form>
+
+                  <div class="submit-row">
+                    <a href="#" class="form-back-btn" id="q12-back"><i class="fa fa-chevron-left"></i>Back</a>
+                    <a href="game-diagnosis.html" class="form-next-btn text-green next-disable" id="q12-next">Finish<i class="fa fa-chevron-right"></i></a>
+                  </div>
+                </div>
+					    </div>
+					  </div>
+					  <div class="panel panel-default">
+						  <div class="panel-heading" role="tab" id="headingTwo"> 
+					  		<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						      <h4 class="panel-title">
+					          <i class="fa fa-pencil accordion-icon"></i>Create Record
+									</h4>
+								</a>
+					    </div>
+
+					    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+					      <div class="panel-body">
+					        <form>
+					        	<div class="form-group">
+					        		<label><i class="fa fa-key form-icon"></i>Child ID: <i>98765432</i></label>
+					        	</div>
+					        	<div class="form-group">
+					        		<label><i class="fa fa-child form-icon"></i>Child's name</label>
+					        		<input type="text" value="Sushant Kumar" class="form-control">
+					        	</div>
+					 					<div class="form-group">
+					 						<label><i class="fa fa-birthday-cake form-icon"></i>Date of birth</label>
+					 						<input type="text" class="form-control" value="07/12/2014">
+					 					</div>
+					 					<div class="row">
+					 						<div class="col-xs-6">
+					 							<div class="form-group">
+					 								<label><i class="fa fa-venus-mars form-icon"></i>Gender</label>
+					 								<input type="text" class="form-control" value="M">
+					 							</div>
+					 						</div>
+					 						<div class="col-xs-6">
+					 							<div class="form-group">
+					 								<label><img src="images/drop.png" class="form-icon-image" alt="">Blood group</label>
+					 								<!-- <input type="text" class="form-control" placeholder="Blood group"> -->
+					 								<select name="Blood group" class="form-control" id="">
+					 									<option value="A +ve">A +ve</option>
+					 									<option value="A -ve">A -ve</option>
+					 									<option value="B +ve">B +ve</option>
+					 									<option value="B -ve">B -ve</option>
+					 									<option value="AB +ve" selected>AB +ve</option>
+					 									<option value="AB -ve">AB -ve</option>
+					 									<option value="O +ve">O +ve</option>
+					 									<option value="O -ve">O -ve</option>
+					 								</select>
+					 							</div>
+					 						</div>
+					 					</div>
+					 					<div class="form-group">
+					 						<label><i class="fa fa-female form-icon"></i>Mother's name</label>
+					 						<input type="text" class="form-control" value="Kamla Kumar">
+					 					</div>
+					 					<div class="form-group">
+					 						<label><i class="fa fa-male form-icon"></i>Father's name</label>
+					 						<input type="text" class="form-control" value="Manuj Kumar">
+					 					</div>
+					 					<div class="text-right">
+					 						<a href="details-first-time.html" class="btn btn-primary">Submit Record <i class="fa fa-chevron-right submit-right"></i></a>
+					 					</div>
+					        </form>
+					      </div>
+					    </div>
+					  </div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container landing-page-search-container">
+			<div class="border-container">
+				<div class="row">
+					<div class="col-xs-12">
+						<h2>Records</h2>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="landing-page-search-wrapper form-control">
+							<i class="fa fa-search"></i>
+							<input type="text" placeholder="Search for a record" class="landing-page-search">
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="row evaluation-unit">
+							<div class="col-xs-12">
+								<b><p><i class="fa fa-child"></i>Sushant Kumar</p></b>
+							</div>
+							<div class="col-xs-6">
+								<p><i class="fa fa-female"></i>Kamla Kumar</p>
+							</div>
+							<div class="col-xs-6">
+								<p><i class="fa fa-birthday-cake"></i>11 months</p>
+							</div>
+							<div class="col-xs-12">
+								<p class="text-red"><i><i class="fa fa-clock-o"></i>Vaccination camp on 16 Aug 2015 (tomorrow)</i></p>
+							</div>
+							<div class="col-xs-12 text-right">
+								<a href="details-later.html" class="btn btn-default btn-sm evaluation-submit">View Record</a>
+							</div>
+						</div>
+						
+						<div class="row evaluation-unit">
+							<div class="col-xs-12">
+								<b><p><i class="fa fa-child"></i>Kishen Singh</p></b>
+							</div>
+							<div class="col-xs-6">
+								<p><i class="fa fa-female"></i>Kanti Singh</p>
+							</div>
+							<div class="col-xs-6">
+								<p><i class="fa fa-birthday-cake"></i>7 months</p>
+							</div>
+							<div class="col-xs-12">
+								<p class="text-yellow"><i><i class="fa fa-clock-o"></i>Polio camp on 17 Aug 2015 (2 days)</i></p>
+							</div>
+							<div class="col-xs-12 text-right">
+								<a href="details-later.html" class="btn btn-default btn-sm evaluation-submit">View Record</a>
+							</div>
+						</div>
+
+						<div class="row evaluation-unit">
+							<div class="col-xs-12">
+								<b><p><i class="fa fa-child"></i>Sunil Prasad</p></b>
+							</div>
+							<div class="col-xs-6">
+								<p><i class="fa fa-female"></i>Bindu Prasad</p>
+							</div>
+							<div class="col-xs-6">
+								<p><i class="fa fa-birthday-cake"></i>21 months</p>
+							</div>
+							<div class="col-xs-12">
+								<p class="text-green"><i><i class="fa fa-clock-o"></i>Vaccination camp on 18 Aug 2015</i></p>
+							</div>
+							<div class="col-xs-12 text-right">
+								<a href="details-later.html" class="btn btn-default btn-sm evaluation-submit">View Record</a>
+							</div>
+						</div>
+
+
+						<div class="row evaluation-unit">
+							<div class="col-xs-12">
+								<b><p><i class="fa fa-child"></i>Kanti Dalvi</p></b>
+							</div>
+							<div class="col-xs-6">
+								<p><i class="fa fa-female"></i>Indu Dalvi</p>
+							</div>
+							<div class="col-xs-6">
+								<p><i class="fa fa-birthday-cake"></i>21 months</p>
+							</div>
+<!-- 							<div class="col-xs-12">
+								<p class="text-green"><i><i class="fa fa-clock-o"></i>Next visit on 20 Aug 2015</i></p>
+							</div> -->
+							<div class="col-xs-12 text-right">
+								<a href="details-later.html" class="btn btn-default btn-sm evaluation-submit">View Record</a>
+							</div>
+						</div>
+
+						<div class="row view-all-records-btn-row">
+							<div class="col-xs-12">
+								<a class="btn btn-primary btn-lg view-all-records-btn">View All Records (125)</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+	</div>
+
+	<code>
+
+    clicking on "#answer1" toggles class "active" on "#answer1"
+    clicking on "#answer2" toggles class "active" on "#answer2"
+    clicking on "#answer3" toggles class "active" on "#answer3"
+    clicking on "#answer4" toggles class "active" on "#answer4"
+    clicking on "#answer5" toggles class "active" on "#answer5"
+    clicking on "#answer6" toggles class "active" on "#answer6"
+
+    clicking on "#q1-next" adds class "invisible" on "#q1-panel"
+    clicking on "#q1-next" removes class "invisible" on "#q2-panel"
+    clicking on "#q2-next" adds class "invisible" on "#q2-panel"
+    clicking on "#q2-next" removes class "invisible" on "#q3-panel"
+    clicking on "#q3-next" adds class "invisible" on "#q3-panel"
+    clicking on "#q3-next" removes class "invisible" on "#q12-panel"
+
+    clicking on "#q2-back" adds class "invisible" on "#q2-panel"
+    clicking on "#q2-back" removes class "invisible" on "#q1-panel"
+    clicking on "#q3-back" adds class "invisible" on "#q3-panel"
+    clicking on "#q3-back" removes class "invisible" on "#q2-panel"
+    clicking on "#q12-back" adds class "invisible" on "#q12-panel"
+    clicking on "#q12-back" removes class "invisible" on "#q3-panel"
+    
+    clicking on "#q1-next" removes class "q1-wrapper" on "#collapseOne"
+    clicking on "#q1-next" adds class "q2-3-12-wrapper" on "#collapseOne"
+    clicking on "#q2-back" removes class "q2-3-12-wrapper" on "#collapseOne"
+    clicking on "#q2-back" adds class "q1-wrapper" on "#collapseOne"
+
+    clicking on ".grid-answer" removes class "next-disable" on "#q1-next"
+    clicking on ".q2-answer" removes class "next-disable" on "#q2-next"
+    clicking on ".q3-answer" removes class "next-disable" on "#q3-next"
+    clicking on ".q12-answer" removes class "next-disable" on "#q12-next"
+
+
+	</code>
+
+	<script src="scripts/scripts.js"></script>
+
+
+</body>
+
+</html>

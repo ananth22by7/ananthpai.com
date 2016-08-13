@@ -1,0 +1,59 @@
+@import "compass"; // Include if you want Compass mixins
+@import "compass/reset";
+
+body {
+	background-color: #000;
+	margin: 0;
+	overflow: hidden;
+}
+
+img {
+	min-height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+.images {
+	position: relative;
+	left: -50%;
+	height: 100%;
+	width: 100%;
+}
+
+.w1 {
+	@include animation(move-left 6s cubic-bezier(.5,.1,0,.91) 0.5s forwards infinite);
+}
+
+.w2 {
+	@include animation(move-right 6s cubic-bezier(.5,.1,0,.91) 0.5s forwards infinite);
+}
+
+@include keyframes(move-left) {
+	0%{
+		@include transform(translate(0, 0));
+	}
+	25%{
+		@include transform(translate(-6%, 0));
+	}
+	75% {
+		@include transform(translate(6%,0));
+	}
+	100% {
+		@include transform(translate(0, 0));
+	}
+}
+
+@include keyframes(move-right) {
+	0%{
+		@include transform(translate(0, 0));
+	}
+	25%{
+		@include transform(translate(6%, 0));
+	}
+	75% {
+		@include transform(translate(-6%,0));
+	}
+	100% {
+		@include transform(translate(0, 0));
+	}
+}

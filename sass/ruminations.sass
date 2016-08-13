@@ -1,0 +1,265 @@
+/************************************************/
+/************************************************/
+/* UX interactions */
+/************************************************/
+/************************************************/
+
+.key, .drag-key, .drag-key-shadow
+  width: 70px
+  height: 100px
+  background-color: $c-key
+  border-radius: 5px
+  left: 200px
+  z-index: 10
+
+.drag-key, .drag-key-shadow
+  background-color: darken($c-key, 20%)
+  z-index: 8
+
+.drag-key-shadow
+  opacity: 0.3
+  z-index: 7
+
+.key
+  +key-shadow-normal()
+
+.finger
+  width: 50px
+  height: 50px
+  background-color: $c-finger
+  position: absolute
+  top: 125px
+  left: 10px
+  +finger-shadow-normal()
+  border-radius: 50%
+  z-index: 15
+
+  /**********************************/
+/* Quick backspace button */
+/**********************************/
+
+.qb-1-wrapper
+  height: 100%
+
+.bsp-icon, .bsp-icon-inv
+  opacity: 0.3
+  width: 60%
+  position: absolute
+  top: 34%
+  left: 19%
+
+.bsp-icon-inv
+  opacity: 0
+
+.qb-1
+  position: relative
+  height: 0
+  width: 100%
+  margin-top: 200px
+
+  .text
+    left: 0
+    top: 150px
+    width: 400px
+    height: 25px
+    overflow: hidden
+    display: block
+    padding: 2px 4px 2px 0
+    .cursor
+      width: 1px
+      background-color: #666
+      height: 25px
+      position: absolute
+      right: 0
+      top: 0
+    .p-wrapper
+      width: 100%
+      height: 25px
+      margin-left: 4px
+      white-space: nowrap
+      overflow: hidden
+      text-overflow: clip
+
+
+  .finger
+    +keyframes(qb-1-finger)
+      0%
+        opacity: 0
+      5%
+        opacity: 1
+        +transform(translateY(-100px))
+      7%
+        +transform(translateY(-100px))
+        background-color: $c-finger
+        +finger-shadow-normal()
+      9%
+        +transform(translateY(-100px))
+        background-color: $c-finger-pressed
+        +finger-shadow-pressed()
+      12%
+        +transform(translateY(-100px))
+      17%
+        +transform(translateY(-220px))
+      25%
+        +transform(translateY(-220px))
+      40%
+        +transform(translateX(-150px) translateY(-220px))
+      78%
+        background-color: $c-finger-pressed
+        +finger-shadow-pressed()
+      80%
+        +transform(translateX(-150px) translateY(-220px))
+        background-color: $c-finger
+        +finger-shadow-normal()
+        opacity: 1
+      100%
+        +transform(translateX(-150px) translateY(0px))
+        +finger-shadow-normal()
+        opacity: 0
+    +animation-name(qb-1-finger)
+    +animation-duration(10s)
+    +animation-timing-function(ease)
+    +animation-iteration-count(infinite)
+
+  .key
+    +keyframes(qb-1-key)
+      7%
+        background-color: $c-key
+        +key-shadow-normal()
+      9%
+        background-color: darken($c-key, 20%)
+        +key-shadow-pressed()
+      85%
+        background-color: darken($c-key, 20%)
+        +key-shadow-pressed()
+      92%
+        background-color: $c-key
+        +key-shadow-normal()
+      100%
+        background-color: $c-key
+    +animation-name(qb-1-key)
+    +animation-duration(10s)
+    +animation-timing-function(ease)
+    +animation-iteration-count(infinite)
+
+  .bsp-icon
+    +keyframes(qb-1-bsp)
+      0%
+        opacity: 0.3
+      7%
+        opacity: 0.3
+      9%
+        opacity: 0
+      85%
+        opacity: 0
+      92%
+        opacity: 0.3
+      100%
+        opacity: 0.3
+    +animation-name(qb-1-bsp)
+    +animation-duration(10s)
+    +animation-timing-function(ease)
+    +animation-iteration-count(infinite)
+
+  .bsp-icon-inv
+    +keyframes(qb-1-bsp-inv)
+      0%
+        opacity: 0
+      7%
+        opacity: 0
+      9%
+        opacity: 0.6
+      85%
+        opacity: 0.6
+      92%
+        opacity: 0
+      100%
+        opacity: 0
+    +animation-name(qb-1-bsp-inv)
+    +animation-duration(10s)
+    +animation-timing-function(ease)
+    +animation-iteration-count(infinite)
+
+  .drag-key
+    +keyframes(qb-1-drag-key)
+      12%
+        +transform(translateY(0px))
+      17%
+        +transform(translateY(-120px))
+      25%
+        +transform(translateY(-120px))
+        opacity: 1
+      40%
+        +transform(translateX(-100px) translateY(-120px))
+        opacity: 0.2
+      78%
+        +transform(translateX(-100px) translateY(-120px))
+        opacity: 0.2
+      82%
+        +transform(translateX(0) translateY(-120px))
+        opacity: 1
+      88%
+        +transform(translateX(0) translateY(0px))
+        opacity: 0
+      100%
+        +transform(translateX(0) translateY(0px))
+        opacity: 0
+    +animation-name(qb-1-drag-key)
+    +animation-duration(10s)
+    +animation-timing-function(ease)
+    +animation-iteration-count(infinite)
+
+  .drag-key-shadow
+    +keyframes(qb-1-drag-key-shadow)
+      12%
+        +transform(translateY(0px))
+      17%
+        +transform(translateY(-120px))
+      25%
+        opacity: 0.5
+      40%
+        opacity: 0.05
+      78%
+        opacity: 0.05
+      82%
+        +transform(translateY(-120px))
+        opacity: 0.5
+      88%
+        +transform(translateY(0px))
+        opacity: 0
+      100%
+        opacity: 0
+    +animation-name(qb-1-drag-key-shadow)
+    +animation-duration(10s)
+    +animation-timing-function(ease)
+    +animation-iteration-count(infinite)
+
+  .text
+    +keyframes(qb-1-text)
+      25%
+        width: 400px
+      50%
+        width: 0
+      100%
+        width: 0
+    +animation-name(qb-1-text)
+    +animation-duration(10s)
+    +animation-timing-function(ease-in)
+    +animation-iteration-count(infinite)
+
+    .cursor
+      +keyframes(cursor-flash)
+        0%
+          opacity: 1
+        50%
+          opacity: 0
+        100%
+          opacity: 1
+      +animation-name(cursor-flash)
+      +animation-duration(1.2s)
+      +animation-timing-function(linear)
+      +animation-iteration-count(infinite)
+
+
+  > *
+    position: absolute

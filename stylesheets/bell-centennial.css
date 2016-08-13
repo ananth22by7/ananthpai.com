@@ -1,0 +1,262 @@
+@font-face {
+  font-family: "bc-bold";
+  src: url("../new-fonts/Bell-Centennial-Std-Bold-Listing_6528.ttf") format("truetype");
+}
+@font-face {
+  font-family: "bc-number";
+  src: url("../new-fonts/Bell-Centennial-Std-Name---Number_6529.ttf") format("truetype");
+}
+@font-face {
+  font-family: "bc-address";
+  src: url("../new-fonts/Bell-Centennial-Std-Address_6527.ttf") format("truetype");
+}
+/* line 15, ../sass/bell-centennial.sass */
+p, h1, h2, h3, a {
+  color: #312926;
+}
+
+/* line 18, ../sass/bell-centennial.sass */
+a {
+  color: #2f9dac;
+}
+/* line 20, ../sass/bell-centennial.sass */
+a:hover, a:active, a:focus {
+  color: #2f9dac;
+  border-bottom: 1px dotted #2f9dac;
+}
+
+/* line 24, ../sass/bell-centennial.sass */
+h1, h2, h3 {
+  font-family: "bc-bold", helvetica, sans-serif;
+  font-size: 32px;
+}
+
+/* line 28, ../sass/bell-centennial.sass */
+h1 {
+  margin-bottom: 12px;
+}
+
+/* line 31, ../sass/bell-centennial.sass */
+h3 {
+  font-size: 20px;
+}
+
+/* line 34, ../sass/bell-centennial.sass */
+.intro-caption, .para-caption {
+  font-family: "bc-number", helvetica, sans-serif;
+}
+
+/* line 37, ../sass/bell-centennial.sass */
+p, a {
+  font-family: "bc-address", helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* line 42, ../sass/bell-centennial.sass */
+.para-caption {
+  font-size: 16px;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* line 50, ../sass/bell-centennial.sass */
+.bell-bg {
+  background: url(../images/bg.jpg) repeat center center;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+}
+
+/* line 57, ../sass/bell-centennial.sass */
+.cover-spread-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: absolute;
+}
+
+/* line 62, ../sass/bell-centennial.sass */
+.cover-spread {
+  position: relative;
+  top: -85px;
+}
+/* line 65, ../sass/bell-centennial.sass */
+.cover-spread img {
+  display: inline-block;
+  height: 378px;
+}
+
+/* line 69, ../sass/bell-centennial.sass */
+.bell-b {
+  position: absolute;
+  left: -491px;
+}
+
+/* line 73, ../sass/bell-centennial.sass */
+.bell-ell {
+  padding-left: 2px;
+}
+
+/* line 76, ../sass/bell-centennial.sass */
+.section-intro {
+  padding-top: 347px;
+  line-height: 1.6;
+}
+
+/* line 80, ../sass/bell-centennial.sass */
+.intro-caption {
+  padding-bottom: 14px;
+}
+
+/* line 83, ../sass/bell-centennial.sass */
+.index {
+  padding: 14px 16px;
+  border: 1px dotted #312926;
+  display: inline-block;
+}
+/* line 87, ../sass/bell-centennial.sass */
+.index li {
+  font-size: 16px;
+  list-style: none;
+}
+/* line 90, ../sass/bell-centennial.sass */
+.index li:first-child {
+  font-family: "bc-number", helvetica, sans-serif;
+}
+/* line 92, ../sass/bell-centennial.sass */
+.index a {
+  font-family: "bc-address", helvetica, sans-serif;
+}
+
+/* line 96, ../sass/bell-centennial.sass */
+.section-para {
+  padding-top: 32px;
+}
+/* line 98, ../sass/bell-centennial.sass */
+.section-para img {
+  padding: 24px;
+  border: 1px dotted #312926;
+  width: auto;
+  max-width: 100%;
+  display: inline-block;
+  position: relative;
+}
+
+/* line 106, ../sass/bell-centennial.sass */
+.para-img {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+/* line 110, ../sass/bell-centennial.sass */
+.img-caption {
+  font-size: 12px;
+  display: inline-block;
+  position: relative;
+  left: -10px;
+}
+
+/* line 116, ../sass/bell-centennial.sass */
+.dotted-line {
+  border-bottom: 1px dotted #312926;
+  width: 100%;
+  margin: 34px 0 10px;
+}
+
+/* line 122, ../sass/bell-centennial.sass */
+.section-references .para-title {
+  margin-bottom: 16px;
+}
+
+/* line 125, ../sass/bell-centennial.sass */
+.section-sign-off {
+  padding-top: 12px;
+  padding-bottom: 24px;
+}
+/* line 128, ../sass/bell-centennial.sass */
+.section-sign-off p {
+  font-size: 12px;
+  opacity: 0.4;
+}
+
+@media screen and (max-width: 992px) {
+  /* line 134, ../sass/bell-centennial.sass */
+  .cover-spread-wrapper {
+    position: static;
+  }
+
+  /* line 137, ../sass/bell-centennial.sass */
+  .cover-img-wrapper {
+    white-space: nowrap;
+  }
+
+  /* line 140, ../sass/bell-centennial.sass */
+  .cover-spread {
+    top: -60px;
+  }
+  /* line 142, ../sass/bell-centennial.sass */
+  .cover-spread img {
+    height: 200px;
+  }
+
+  /* line 145, ../sass/bell-centennial.sass */
+  .bell-b {
+    position: static;
+    display: inline-block;
+  }
+
+  /* line 149, ../sass/bell-centennial.sass */
+  .bell-ell {
+    padding-left: 0;
+    display: inline-block;
+  }
+
+  /* line 153, ../sass/bell-centennial.sass */
+  .section-intro {
+    padding-top: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 159, ../sass/bell-centennial.sass */
+  .para-img img {
+    width: auto;
+    max-width: 100%;
+  }
+  /* line 162, ../sass/bell-centennial.sass */
+  .para-img .img-caption {
+    left: 0;
+    margin-top: 16px;
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 169, ../sass/bell-centennial.sass */
+  h1 {
+    font-size: 28px;
+    margin-top: 12px;
+  }
+
+  /* line 173, ../sass/bell-centennial.sass */
+  .intro-caption {
+    margin-bottom: 4px;
+  }
+
+  /* line 176, ../sass/bell-centennial.sass */
+  .cover-spread {
+    top: -30px;
+  }
+  /* line 178, ../sass/bell-centennial.sass */
+  .cover-spread img {
+    height: 100px;
+  }
+  /* line 181, ../sass/bell-centennial.sass */
+  .cover-spread .bell-ell {
+    margin-left: -4px;
+  }
+  /* line 185, ../sass/bell-centennial.sass */
+  .cover-spread .para-img .img-caption {
+    margin-bottom: 0;
+  }
+}
